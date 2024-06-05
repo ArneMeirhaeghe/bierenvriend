@@ -1,0 +1,124 @@
+.favoritesContainer {
+  margin-top: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding);
+}
+.secnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.bread {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.bread a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 5px;
+}
+
+.bread a:hover {
+  text-decoration: underline;
+}
+h1 {
+  color: var(--text-color);
+  font-size: var(--font-size-large);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 80vw;
+}
+
+.productCard {
+  flex: 1 1 calc(25% - 20px); /* Adjust for larger screens */
+  max-width: calc(25% - 20px); /* Ensure consistent size */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+}
+
+.productCard img {
+  max-width: 100%;
+  height: auto;
+}
+
+.productCard .info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.productCard .info span {
+  flex: 1;
+  text-align: center;
+}
+
+.productCard .info button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.productCard .info button svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 1024px) {
+  .productCard {
+    flex: 1 1 calc(33.33% - 20px); /* Adjust for medium screens */
+    max-width: calc(33.33% - 20px); /* Ensure consistent size */
+  }
+}
+
+@media (max-width: 768px) {
+  .favoritesContainer {
+    align-items: center; /* Center align on smaller screens */
+  }
+
+  .section {
+    justify-content: center;
+  }
+
+  .productCard {
+    flex: 1 1 calc(50% - 20px); /* Adjust for smaller screens */
+    max-width: calc(50% - 20px); /* Ensure consistent size */
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Full width on very small screens */
+  }
+
+  .productCard {
+    flex: 1 1 100%; /* Full width on very small screens */
+    max-width: 100%; /* Ensure consistent size */
+  }
+}

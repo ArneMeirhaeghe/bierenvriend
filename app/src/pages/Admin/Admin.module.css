@@ -1,0 +1,70 @@
+.admin {
+  padding: var(--padding);
+  font-family: Arial, sans-serif;
+  margin: 120px auto;
+  max-width: 1200px;
+}
+
+.admin h1 {
+  color: var(--primary-1);
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 20px;
+}
+
+.adminTable {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--card-border-radius);
+  overflow: hidden;
+}
+
+.adminTable th,
+.adminTable td {
+  padding: var(--padding);
+  text-align: left;
+}
+
+.adminTable th {
+  background-color: var(--primary-2);
+  color: var(--text-color);
+  font-weight: var(--font-weight-bold);
+}
+
+.adminTable td {
+  background-color: var(--card-background-color);
+  color: var(--text-color);
+}
+
+.adminTable tr:nth-child(even) td {
+  background-color: var(--primary-4);
+}
+
+.adminTable button {
+  background-color: var(--primary-1);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: var(--button-border-radius);
+  cursor: pointer;
+  transition: background-color var(--transition-duration);
+}
+
+.adminTable button:hover {
+  background-color: var(--hover-color);
+}
+
+.adminTable input[type="text"],
+.adminTable select {
+  padding: 8px;
+  border: 1px solid var(--card-border-color);
+  border-radius: var(--button-border-radius);
+  width: calc(100% - 16px);
+}
+
+.adminTable input[type="text"]:focus,
+.adminTable select:focus {
+  border-color: var(--primary-1);
+  outline: none;
+}

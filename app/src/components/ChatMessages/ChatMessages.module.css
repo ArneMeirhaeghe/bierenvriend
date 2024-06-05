@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.message {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 60%;
+  word-wrap: break-word;
+}
+
+.sender {
+  align-self: flex-end;
+  background-color: #e1ffc7; /* Lichte groene achtergrond voor de afzender */
+}
+
+.receiver {
+  align-self: flex-start;
+  background-color: #f1f0f0; /* Lichte grijze achtergrond voor de ontvanger */
+}
+
+.messageForm {
+  display: flex;
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.messageForm input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.messageForm button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.messageForm button:hover {
+  background-color: #0056b3;
+}

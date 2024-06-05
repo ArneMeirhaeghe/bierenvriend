@@ -1,0 +1,38 @@
+:root {
+  /* Primary Colors */
+  --primary-1: #f18a42; /* Orange */
+  --primary-2: #f0c75e; /* Yellow */
+  --primary-3: #f2e1ae; /* Light Yellow */
+  --primary-4: #ffad81; /* Light Orange */
+
+  /* Secondary Colors */
+  --secondary-1: #00a899; /* Teal */
+  --secondary-2: #003d4a; /* Dark Blue */
+  --secondary-3: #82c8c2; /* Light Teal */
+  --secondary-4: #789091; /* Gray */
+
+  /* Text and Font */
+  --text-color: var(--secondary-2);
+  --hover-color: var(--primary-1);
+  --font-size: 1.2em;
+  --font-weight-bold: bold;
+  --font-weight-normal: normal;
+  --font-weight-light: lighter;
+
+  /* Card Styles */
+  --card-border-color: var(--primary-1);
+  --card-border-radius: 8px;
+  --card-background-color: #fff;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --padding: 16px;
+  --font-size-large: 1.5em;
+  --font-size-medium: 1em;
+  --button-border-radius: 8px;
+  --transition-duration: 0.4s;
+  --card-background-color: var(--primary-3);
+
+  /* Link and Price */
+  --link-color: var(--primary-1);
+  --price-color: #000;
+  --transition-duration: 0.4s;
+}

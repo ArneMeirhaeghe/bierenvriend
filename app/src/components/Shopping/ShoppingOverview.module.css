@@ -1,0 +1,78 @@
+.overviewContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--card-background-color);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.heading {
+  color: var(--text-color);
+  font-size: var(--font-size-large);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.userInformation {
+  background-color: #fff;
+  padding: var(--padding);
+  border: 1px solid var(--card-border-color);
+  border-radius: var(--card-border-radius);
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.userInformation h2 {
+  color: var(--text-color);
+  font-size: var(--font-size-medium);
+  margin-bottom: 10px;
+}
+
+.userInformation p {
+  margin: 5px 0;
+}
+
+.ordersTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.ordersTable th,
+.ordersTable td {
+  padding: 12px;
+  border: 1px solid var(--secondary-4);
+  text-align: center;
+}
+
+.ordersTable th {
+  background-color: var(--secondary-3);
+  color: var(--text-color);
+  font-weight: var(--font-weight-bold);
+}
+
+.ordersTable td {
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .overviewContainer {
+    padding: 10px;
+  }
+
+  .ordersTable th,
+  .ordersTable td {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ordersTable th,
+  .ordersTable td {
+    padding: 6px;
+  }
+}

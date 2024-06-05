@@ -1,0 +1,39 @@
+.privacyPolicy {
+  padding: var(--padding);
+  background-color: var(--card-background-color);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--box-shadow);
+  font-size: var(--font-size);
+  color: var(--text-color);
+  margin: 20px;
+  max-width: 800px;
+  margin: 120px auto;
+}
+
+.privacyPolicy h1,
+.privacyPolicy h2 {
+  color: var(--primary-1);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 16px;
+}
+
+.privacyPolicy p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-weight: var(--font-weight-normal);
+}
+
+@media (max-width: 768px) {
+  .privacyPolicy {
+    padding: 12px;
+    font-size: var(--font-size-medium);
+  }
+
+  .privacyPolicy h1 {
+    font-size: 1.8em;
+  }
+
+  .privacyPolicy h2 {
+    font-size: 1.4em;
+  }
+}

@@ -1,0 +1,73 @@
+.loginContainer {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: var(--padding);
+  border: 1px solid var(--card-border-color);
+  border-radius: var(--card-border-radius);
+  background-color: var(--card-background-color);
+  box-shadow: var(--box-shadow);
+}
+
+.loginContainer h2 {
+  color: var(--text-color);
+  font-size: var(--font-size-large);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginForm label {
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+  font-weight: var(--font-weight-normal);
+}
+
+.loginForm input[type="text"],
+.loginForm input[type="password"],
+.loginForm input[type="email"],
+.loginForm select {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--secondary-4);
+  border-radius: var(--card-border-radius);
+  font-size: var(--font-size);
+  color: var(--text-color);
+}
+
+.loginForm input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.loginForm .form_button {
+  padding: 0.5rem 1rem;
+  background-color: var(--secondary-1);
+  border: none;
+  border-radius: var(--button-border-radius);
+  color: #fff;
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+  transition: background-color var(--transition-duration);
+}
+
+.loginForm .form_button:hover {
+  background-color: var(--hover-color);
+}
+
+.error {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.loginForm a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color var(--transition-duration);
+}
+
+.loginForm a:hover {
+  color: var(--hover-color);
+}

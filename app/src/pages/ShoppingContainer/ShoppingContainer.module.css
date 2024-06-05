@@ -1,0 +1,54 @@
+.container {
+  max-width: 1200px;
+  margin: 200px auto;
+  padding: var(--padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.radioGroup {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.radioInput {
+  display: none;
+}
+
+.radioLabel {
+  padding: 10px 20px;
+  border: 1px solid var(--secondary-4);
+  border-radius: var(--button-border-radius);
+  background-color: #fff;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background-color var(--transition-duration),
+    color var(--transition-duration);
+  margin: 0 10px;
+}
+
+.radioInput:checked + .radioLabel {
+  background-color: var(--secondary-1);
+  color: #fff;
+}
+
+.radioLabel:hover {
+  background-color: var(--primary-4);
+}
+
+.shoppingCart,
+.overview {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  .radioLabel {
+    padding: 5px 10px;
+    margin: 0 5px;
+  }
+}

@@ -1,0 +1,105 @@
+.shoppingCartContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--card-background-color);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.heading {
+  color: var(--text-color);
+  font-size: var(--font-size-large);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  margin-bottom: 20px;
+}
+
+.cartTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.cartTable th,
+.cartTable td {
+  padding: 12px;
+  border: 1px solid var(--secondary-4);
+  text-align: center;
+}
+
+.cartTable th {
+  background-color: var(--secondary-3);
+  color: var(--text-color);
+  font-weight: var(--font-weight-bold);
+}
+
+.cartTable td {
+  background-color: #fff;
+}
+
+.quantityInput {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid var(--secondary-4);
+  border-radius: var(--button-border-radius);
+  text-align: center;
+}
+
+.placeOrderButton {
+  padding: 10px 20px;
+  background-color: var(--secondary-1);
+  border: none;
+  border-radius: var(--button-border-radius);
+  color: #fff;
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+  transition: background-color var(--transition-duration);
+}
+
+.placeOrderButton:hover {
+  background-color: var(--hover-color);
+}
+
+@media (max-width: 768px) {
+  .shoppingCartContainer {
+    padding: 10px;
+  }
+
+  .cartTable th,
+  .cartTable td {
+    padding: 8px;
+  }
+
+  .quantityInput {
+    width: 50px;
+    padding: 4px;
+  }
+
+  .placeOrderButton {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cartTable th,
+  .cartTable td {
+    padding: 6px;
+  }
+
+  .quantityInput {
+    width: 40px;
+    padding: 3px;
+  }
+
+  .placeOrderButton {
+    padding: 6px 12px;
+  }
+}

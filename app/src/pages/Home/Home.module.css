@@ -1,0 +1,186 @@
+.producten {
+  margin-top: 210px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.secnav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.bread {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.bread a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 5px;
+}
+
+.bread a:hover {
+  text-decoration: underline;
+}
+
+.search {
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search:focus {
+  border-color: #007bff;
+}
+
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 300px;
+  margin-right: 20px;
+}
+
+.filterItem {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.filterItem:focus {
+  border-color: #007bff;
+}
+
+select.filterItem {
+  appearance: none;
+  background: #fff
+    url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23999' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E")
+    no-repeat right 10px center;
+  background-size: 8px 10px;
+}
+
+.filterItem::placeholder {
+  color: #aaa;
+}
+
+.section {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 80vw;
+}
+
+.productCard {
+  flex: 1 1 calc(25% - 20px); /* Adjust for larger screens */
+  max-width: calc(25% - 20px); /* Ensure consistent size */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  width: 20vw;
+}
+
+.productCard img {
+  max-width: 100%;
+  height: auto;
+}
+
+.productCard .info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.productCard .info span {
+  flex: 1;
+  text-align: center;
+}
+
+.productCard .info button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.productCard .info button svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 1024px) {
+  .productCard {
+    flex: 1 1 calc(33.33% - 20px); /* Adjust for medium screens */
+    max-width: calc(33.33% - 20px); /* Ensure consistent size */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center; /* Center align on smaller screens */
+  }
+
+  .filters {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px; /* Ensure the filters don't get too wide */
+    margin-right: 0;
+    margin-left: 0;
+    justify-content: center; /* Center align filters */
+  }
+
+  .productCard {
+    flex: 1 1 calc(50% - 20px); /* Adjust for smaller screens */
+    max-width: calc(50% - 20px); /* Ensure consistent size */
+  }
+}
+
+@media (max-width: 480px) {
+  .filters {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%; /* Full width on very small screens */
+  }
+
+  .productCard {
+    flex: 1 1 100%; /* Full width on very small screens */
+    max-width: 100%; /* Ensure consistent size */
+  }
+}

@@ -1,0 +1,51 @@
+.notFound {
+  text-align: center;
+  padding: 50px 20px;
+  font-family: "Arial", sans-serif;
+  margin: 120px auto;
+}
+
+.notFound h1 {
+  font-size: 5em;
+  margin: 20px 0;
+  color: var(--primary-1);
+  font-weight: var(--font-weight-bold);
+}
+
+.notFound p {
+  font-size: 1.5em;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.notFound .homeLink {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--primary-1);
+  color: white;
+  text-decoration: none;
+  border-radius: var(--button-border-radius);
+  transition: background-color var(--transition-duration);
+}
+
+.notFound .homeLink:hover {
+  background-color: var(--primary-2);
+}
+
+.questionMark {
+  font-size: 10em;
+  color: var(--primary-1);
+  animation: fadeInOut 2s infinite;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

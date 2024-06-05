@@ -1,0 +1,70 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: var(--padding);
+  border: 1px solid var(--card-border-color);
+  border-radius: var(--card-border-radius);
+  background-color: var(--card-background-color);
+  box-shadow: var(--box-shadow);
+}
+
+h2 {
+  color: var(--text-color);
+  font-size: var(--font-size-large);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.formGroup label {
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+  font-weight: var(--font-weight-normal);
+}
+
+.formGroup input[type="text"],
+.formGroup input[type="number"] {
+  padding: 0.5rem;
+  width: 100%;
+  border: 1px solid var(--secondary-4);
+  border-radius: var(--card-border-radius);
+  font-size: var(--font-size);
+  color: var(--text-color);
+  background-color: #fff;
+  transition: border-color var(--transition-duration),
+    box-shadow var(--transition-duration);
+}
+
+.formGroup input[type="text"]:focus,
+.formGroup input[type="number"]:focus {
+  border-color: var(--primary-1);
+  box-shadow: 0 0 5px var(--primary-1);
+}
+
+.submitButton {
+  padding: 0.5rem 1rem;
+  background-color: var(--secondary-1);
+  border: none;
+  border-radius: var(--button-border-radius);
+  color: #fff;
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+  transition: background-color var(--transition-duration);
+}
+
+.submitButton:hover {
+  background-color: var(--hover-color);
+}
+
+.error {
+  color: red;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,105 @@
+.authContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding);
+  background-color: var(--card-background-color);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--box-shadow);
+  max-width: 400px;
+  margin: 250px auto;
+}
+
+.radioGroup {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.radioInput {
+  display: none;
+}
+
+.radioLabel {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: 2px solid var(--primary-1);
+  border-radius: var(--button-border-radius);
+  background-color: var(--primary-2);
+  cursor: pointer;
+  transition: background-color var(--transition-duration),
+    color var(--transition-duration);
+}
+
+.radioInput:checked + .radioLabel {
+  background-color: var(--primary-1);
+  color: #fff;
+}
+
+.loginContainer,
+.registerContainer {
+  width: 100%;
+}
+
+h2 {
+  color: var(--text-color);
+  font-size: var(--font-size-large);
+  margin-bottom: 16px;
+}
+
+.loginForm,
+.registerForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginForm label,
+.registerForm label {
+  margin-bottom: 8px;
+  color: var(--text-color);
+  font-weight: var(--font-weight-normal);
+}
+
+.loginForm input,
+.registerForm input,
+.registerForm select {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid var(--secondary-4);
+  border-radius: var(--card-border-radius);
+  font-size: var(--font-size-medium);
+}
+
+.loginForm button,
+.registerForm button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--button-border-radius);
+  background-color: var(--secondary-1);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color var(--transition-duration);
+}
+
+.loginForm button:hover,
+.registerForm button:hover {
+  background-color: var(--secondary-2);
+}
+
+.error {
+  color: red;
+  font-size: var(--font-size-medium);
+  margin-bottom: 16px;
+}
+.loginForm select.dropdown {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--secondary-4);
+  border-radius: var(--card-border-radius);
+  font-size: var(--font-size);
+  color: var(--text-color);
+  background-color: #fff;
+  cursor: pointer;
+  transition: border-color var(--transition-duration),
+    box-shadow var(--transition-duration);
+}
